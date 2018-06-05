@@ -14,6 +14,10 @@
 
 + (instancetype)functionalGuideWithItems: (NSArray *)items guideIdentifier: (NSString *)guideIdentifier;
 
++ (instancetype)functionalGuideWithItems: (NSArray *)items
+                         guideIdentifier: (NSString *)guideIdentifier
+                                 tapView: (UIView *)tapView;
+
 @end
 
 
@@ -22,7 +26,6 @@
 + (GGuideManager * )sharedManager;
 
 - (void)addGuideIdentifer: (NSString *)identifier;
-
 - (BOOL)shouldShowGuideViewForIdentifier: (NSString *)identifier;
 
 @end

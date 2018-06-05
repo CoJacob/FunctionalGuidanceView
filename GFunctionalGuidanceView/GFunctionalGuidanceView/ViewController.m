@@ -57,6 +57,9 @@
 - (IBAction)nextVCButtonAction:(id)sender {
     [self.navigationController pushViewController:[[NextGuideViewController alloc] init] animated:YES];
 }
+- (IBAction)cleanRecordButtonAction:(id)sender {
+    [[NSUserDefaults standardUserDefaults] setObject:@[] forKey:@"KFunctionalGuidanceKey"];
+}
 
 
 - (void)didReceiveMemoryWarning {

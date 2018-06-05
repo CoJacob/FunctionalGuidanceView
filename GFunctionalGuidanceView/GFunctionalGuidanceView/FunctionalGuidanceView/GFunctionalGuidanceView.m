@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) NSArray  *items;
 @property (nonatomic, copy)   NSString *guideIdentifier;
+@property (nonatomic, strong) UIView   *tapView;
 
 @end
 
@@ -34,22 +35,33 @@
 }
 
 + (instancetype)functionalGuideWithItems: (NSArray *)items guideIdentifier: (NSString *)guideIdentifier {
-    return [[self alloc] initWithItems:items guideIdentifier:guideIdentifier];
+    return [[self alloc] initWithItems:items guideIdentifier:guideIdentifier tapView:nil];
 }
 
-- (instancetype)initWithItems: (NSArray *)items guideIdentifier: (NSString *)guideIdentifier {
+
++ (instancetype)functionalGuideWithItems: (NSArray *)items guideIdentifier: (NSString *)guideIdentifier tapView: (UIView *)tapView {
+    GFunctionalGuidanceView *guideView = [[self alloc] initWithItems:items guideIdentifier:guideIdentifier tapView:tapView];
+    
+    return guideView;
+}
+
+- (instancetype)initWithItems: (NSArray *)items guideIdentifier: (NSString *)guideIdentifier tapView: (UIView *)tapView {
     self = [super init];
     if (self) {
-        if (![[GGuideManager sharedManager] shouldShowGuideViewForIdentifier:guideIdentifier] || items.count == 0) {
-            return nil;
-        }
+//        if (![[GGuideManager sharedManager] shouldShowGuideViewForIdentifier:guideIdentifier] || items.count == 0) {
+//            return nil;
+//        }
         [[GGuideManager sharedManager] addGuideIdentifer:guideIdentifier];
         
-        self.items = items;
+        self.items           = items;
         self.guideIdentifier = guideIdentifier;
+        self.tapView         = tapView;
         [self configUI];
-        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureHandle:)];
-        [self addGestureRecognizer:tapGesture];
+        if (!self.tapView) {
+            UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureHandle:)];
+            [self addGestureRecognizer:tapGesture];
+        }
+        
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(screenRotateNotification:)
                                                      name:UIDeviceOrientationDidChangeNotification
@@ -71,9 +83,13 @@
         UIView *guideItem = self.items[i];
         guideItem.tag = 100 + i;
         [guideItem setHidden:!(i == 0)];
-        guideItem.userInteractionEnabled = YES;
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(touchGuideView:)];
-        [guideItem addGestureRecognizer:tap];
+        
+        if (!self.tapView) {
+            guideItem.userInteractionEnabled = YES;
+            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(touchGuideView:)];
+            [guideItem addGestureRecognizer:tap];
+        }
+        
         [self addSubview:guideItem];
     }
     [keyWindow addSubview:self];
@@ -83,6 +99,16 @@
 
 - (void)hidden {
     [self removeFromSuperview];
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    if (point.x >= self.tapView.frame.origin.x && point.x <= (self.tapView.frame.origin.x + CGRectGetWidth(self.tapView.frame)) && point.y >= self.tapView.frame.origin.y && point.y <= (self.tapView.frame.origin.y + CGRectGetHeight(self.tapView.frame))) {
+        [self hidden];
+        return [super hitTest:point withEvent:event];
+    }else {
+        return [super hitTest:point withEvent:event];
+    }
+    
 }
 
 #pragma mark - Gesture

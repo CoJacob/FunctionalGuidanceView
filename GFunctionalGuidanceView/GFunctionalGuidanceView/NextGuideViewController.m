@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UIButton *guideButton;
 @property (nonatomic, strong) NSMutableArray *guideItems;
+@property (nonatomic, strong) UIButton *skipButton;
 
 @end
 
@@ -23,6 +24,7 @@
     self.title = @"Two Guide";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.guideButton];
+    [self.view addSubview:self.skipButton];
     [self setUp];
 }
 
@@ -34,9 +36,10 @@
 - (void)setUp {
     NSArray *imageNameArray = @[@"guide00",@"guide01",@"guide02"];
     for (int i = 0; i < 3; i ++) {
-        CGRect frame = CGRectMake(0, 20, 320, 480);
+        CGRect frame = CGRectMake(0, 20, 250, 480);
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
         imageView.image = [UIImage imageNamed:imageNameArray[i]];
+        imageView.userInteractionEnabled = YES;
         [self.guideItems addObject:imageView];
     }
 }
@@ -56,6 +59,19 @@
     return _guideButton;
 }
 
+- (UIButton *)skipButton {
+    if (!_skipButton) {
+        _skipButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _skipButton.frame = CGRectMake(255, 300, 60, 40);
+        [_skipButton setBackgroundColor:[UIColor colorWithRed:0.00f green:0.68f blue:0.98f alpha:1.00f]];
+        _skipButton.clipsToBounds = YES;
+        _skipButton.layer.cornerRadius = 5.f;
+        [_skipButton setTitle:@"SKIP" forState:UIControlStateNormal];
+        [_skipButton addTarget:self action:@selector(tapButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _skipButton;
+}
+
 - (NSMutableArray *)guideItems {
     if (!_guideItems) {
         _guideItems = [NSMutableArray array];
@@ -64,8 +80,7 @@
 }
 
 - (void)showGuideView {
-    
-    [GFunctionalGuidanceView functionalGuideWithItems:self.guideItems guideIdentifier:@"testGuide2"];
+    [GFunctionalGuidanceView functionalGuideWithItems:self.guideItems guideIdentifier:@"testGuide2" tapView:self.skipButton];
 }
 
 #pragma mark - IBAction
@@ -74,6 +89,10 @@
     [self performSelector:@selector(showGuideView)
                withObject:nil
                afterDelay:0.3f];
+}
+
+- (void)tapButtonAction: (UIButton *)button {
+    
 }
 
 
