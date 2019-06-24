@@ -7,27 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642C494B20C7B1B7002E4C9F /* GFollowSlideGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642C494A20C7B1B7002E4C9F /* GFollowSlideGuideViewController.m */; };
+		642C494F20C7B777002E4C9F /* GFollowSlideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 642C494E20C7B777002E4C9F /* GFollowSlideTableViewCell.m */; };
 		6458D3BF20C4DEB3001C6D3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6458D3BE20C4DEB3001C6D3D /* AppDelegate.m */; };
 		6458D3C220C4DEB3001C6D3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6458D3C120C4DEB3001C6D3D /* ViewController.m */; };
 		6458D3C520C4DEB3001C6D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6458D3C320C4DEB3001C6D3D /* Main.storyboard */; };
 		6458D3C720C4DEB5001C6D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6458D3C620C4DEB5001C6D3D /* Assets.xcassets */; };
 		6458D3CA20C4DEB5001C6D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6458D3C820C4DEB5001C6D3D /* LaunchScreen.storyboard */; };
 		6458D3CD20C4DEB5001C6D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6458D3CC20C4DEB5001C6D3D /* main.m */; };
-		6458D3D720C4DEB5001C6D3D /* GFunctionalGuidanceViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6458D3D620C4DEB5001C6D3D /* GFunctionalGuidanceViewTests.m */; };
-		6458D3E220C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6458D3E120C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests.m */; };
-		6458D3F220C4E93F001C6D3D /* GFunctionalGuidanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6458D3F120C4E93F001C6D3D /* GFunctionalGuidanceView.m */; };
 		6458D3F820C50D74001C6D3D /* NextGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6458D3F720C50D74001C6D3D /* NextGuideViewController.m */; };
+		647A21E320CE785F008EB3AE /* GFunctionalGuidanceViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A21E220CE785F008EB3AE /* GFunctionalGuidanceViewUITests.m */; };
+		64B4C93620EB6ADC00A99F31 /* GFunctionalGuidanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B4C93520EB6ADC00A99F31 /* GFunctionalGuidanceView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6458D3D320C4DEB5001C6D3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6458D3B220C4DEB3001C6D3D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6458D3B920C4DEB3001C6D3D;
-			remoteInfo = GFunctionalGuidanceView;
-		};
-		6458D3DE20C4DEB5001C6D3D /* PBXContainerItemProxy */ = {
+		647A21E520CE785F008EB3AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6458D3B220C4DEB3001C6D3D /* Project object */;
 			proxyType = 1;
@@ -37,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		642C494920C7B1B7002E4C9F /* GFollowSlideGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFollowSlideGuideViewController.h; sourceTree = "<group>"; };
+		642C494A20C7B1B7002E4C9F /* GFollowSlideGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFollowSlideGuideViewController.m; sourceTree = "<group>"; };
+		642C494D20C7B777002E4C9F /* GFollowSlideTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFollowSlideTableViewCell.h; sourceTree = "<group>"; };
+		642C494E20C7B777002E4C9F /* GFollowSlideTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFollowSlideTableViewCell.m; sourceTree = "<group>"; };
 		6458D3BA20C4DEB3001C6D3D /* GFunctionalGuidanceView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFunctionalGuidanceView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6458D3BD20C4DEB3001C6D3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6458D3BE20C4DEB3001C6D3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,16 +45,13 @@
 		6458D3C920C4DEB5001C6D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6458D3CB20C4DEB5001C6D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6458D3CC20C4DEB5001C6D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6458D3D220C4DEB5001C6D3D /* GFunctionalGuidanceViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFunctionalGuidanceViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6458D3D620C4DEB5001C6D3D /* GFunctionalGuidanceViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFunctionalGuidanceViewTests.m; sourceTree = "<group>"; };
-		6458D3D820C4DEB5001C6D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6458D3DD20C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFunctionalGuidanceViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6458D3E120C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFunctionalGuidanceViewUITests.m; sourceTree = "<group>"; };
-		6458D3E320C4DEB5001C6D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6458D3F020C4E93F001C6D3D /* GFunctionalGuidanceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFunctionalGuidanceView.h; sourceTree = "<group>"; };
-		6458D3F120C4E93F001C6D3D /* GFunctionalGuidanceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFunctionalGuidanceView.m; sourceTree = "<group>"; };
 		6458D3F620C50D74001C6D3D /* NextGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextGuideViewController.h; sourceTree = "<group>"; };
 		6458D3F720C50D74001C6D3D /* NextGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextGuideViewController.m; sourceTree = "<group>"; };
+		647A21E020CE785F008EB3AE /* GFunctionalGuidanceViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFunctionalGuidanceViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		647A21E220CE785F008EB3AE /* GFunctionalGuidanceViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFunctionalGuidanceViewUITests.m; sourceTree = "<group>"; };
+		647A21E420CE785F008EB3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64B4C93420EB6ADC00A99F31 /* GFunctionalGuidanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFunctionalGuidanceView.h; sourceTree = "<group>"; };
+		64B4C93520EB6ADC00A99F31 /* GFunctionalGuidanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFunctionalGuidanceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +62,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6458D3CF20C4DEB5001C6D3D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6458D3DA20C4DEB5001C6D3D /* Frameworks */ = {
+		647A21DD20CE785F008EB3AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,12 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		642C494C20C7B761002E4C9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				642C494D20C7B777002E4C9F /* GFollowSlideTableViewCell.h */,
+				642C494E20C7B777002E4C9F /* GFollowSlideTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6458D3B120C4DEB3001C6D3D = {
 			isa = PBXGroup;
 			children = (
 				6458D3BC20C4DEB3001C6D3D /* GFunctionalGuidanceView */,
-				6458D3D520C4DEB5001C6D3D /* GFunctionalGuidanceViewTests */,
-				6458D3E020C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests */,
+				647A21E120CE785F008EB3AE /* GFunctionalGuidanceViewUITests */,
 				6458D3BB20C4DEB3001C6D3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,8 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				6458D3BA20C4DEB3001C6D3D /* GFunctionalGuidanceView.app */,
-				6458D3D220C4DEB5001C6D3D /* GFunctionalGuidanceViewTests.xctest */,
-				6458D3DD20C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests.xctest */,
+				647A21E020CE785F008EB3AE /* GFunctionalGuidanceViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +109,9 @@
 				6458D3C120C4DEB3001C6D3D /* ViewController.m */,
 				6458D3F620C50D74001C6D3D /* NextGuideViewController.h */,
 				6458D3F720C50D74001C6D3D /* NextGuideViewController.m */,
+				642C494920C7B1B7002E4C9F /* GFollowSlideGuideViewController.h */,
+				642C494A20C7B1B7002E4C9F /* GFollowSlideGuideViewController.m */,
+				642C494C20C7B761002E4C9F /* View */,
 				6458D3C320C4DEB3001C6D3D /* Main.storyboard */,
 				6458D3C620C4DEB5001C6D3D /* Assets.xcassets */,
 				6458D3C820C4DEB5001C6D3D /* LaunchScreen.storyboard */,
@@ -123,31 +121,22 @@
 			path = GFunctionalGuidanceView;
 			sourceTree = "<group>";
 		};
-		6458D3D520C4DEB5001C6D3D /* GFunctionalGuidanceViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				6458D3D620C4DEB5001C6D3D /* GFunctionalGuidanceViewTests.m */,
-				6458D3D820C4DEB5001C6D3D /* Info.plist */,
-			);
-			path = GFunctionalGuidanceViewTests;
-			sourceTree = "<group>";
-		};
-		6458D3E020C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6458D3E120C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests.m */,
-				6458D3E320C4DEB5001C6D3D /* Info.plist */,
-			);
-			path = GFunctionalGuidanceViewUITests;
-			sourceTree = "<group>";
-		};
 		6458D3EF20C4E15E001C6D3D /* FunctionalGuidanceView */ = {
 			isa = PBXGroup;
 			children = (
-				6458D3F020C4E93F001C6D3D /* GFunctionalGuidanceView.h */,
-				6458D3F120C4E93F001C6D3D /* GFunctionalGuidanceView.m */,
+				64B4C93420EB6ADC00A99F31 /* GFunctionalGuidanceView.h */,
+				64B4C93520EB6ADC00A99F31 /* GFunctionalGuidanceView.m */,
 			);
 			path = FunctionalGuidanceView;
+			sourceTree = "<group>";
+		};
+		647A21E120CE785F008EB3AE /* GFunctionalGuidanceViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				647A21E220CE785F008EB3AE /* GFunctionalGuidanceViewUITests.m */,
+				647A21E420CE785F008EB3AE /* Info.plist */,
+			);
+			path = GFunctionalGuidanceViewUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,40 +159,22 @@
 			productReference = 6458D3BA20C4DEB3001C6D3D /* GFunctionalGuidanceView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6458D3D120C4DEB5001C6D3D /* GFunctionalGuidanceViewTests */ = {
+		647A21DF20CE785F008EB3AE /* GFunctionalGuidanceViewUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6458D3E920C4DEB5001C6D3D /* Build configuration list for PBXNativeTarget "GFunctionalGuidanceViewTests" */;
+			buildConfigurationList = 647A21E720CE785F008EB3AE /* Build configuration list for PBXNativeTarget "GFunctionalGuidanceViewUITests" */;
 			buildPhases = (
-				6458D3CE20C4DEB5001C6D3D /* Sources */,
-				6458D3CF20C4DEB5001C6D3D /* Frameworks */,
-				6458D3D020C4DEB5001C6D3D /* Resources */,
+				647A21DC20CE785F008EB3AE /* Sources */,
+				647A21DD20CE785F008EB3AE /* Frameworks */,
+				647A21DE20CE785F008EB3AE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6458D3D420C4DEB5001C6D3D /* PBXTargetDependency */,
-			);
-			name = GFunctionalGuidanceViewTests;
-			productName = GFunctionalGuidanceViewTests;
-			productReference = 6458D3D220C4DEB5001C6D3D /* GFunctionalGuidanceViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6458D3DC20C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6458D3EC20C4DEB5001C6D3D /* Build configuration list for PBXNativeTarget "GFunctionalGuidanceViewUITests" */;
-			buildPhases = (
-				6458D3D920C4DEB5001C6D3D /* Sources */,
-				6458D3DA20C4DEB5001C6D3D /* Frameworks */,
-				6458D3DB20C4DEB5001C6D3D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6458D3DF20C4DEB5001C6D3D /* PBXTargetDependency */,
+				647A21E620CE785F008EB3AE /* PBXTargetDependency */,
 			);
 			name = GFunctionalGuidanceViewUITests;
 			productName = GFunctionalGuidanceViewUITests;
-			productReference = 6458D3DD20C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests.xctest */;
+			productReference = 647A21E020CE785F008EB3AE /* GFunctionalGuidanceViewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -218,11 +189,7 @@
 					6458D3B920C4DEB3001C6D3D = {
 						CreatedOnToolsVersion = 9.4;
 					};
-					6458D3D120C4DEB5001C6D3D = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 6458D3B920C4DEB3001C6D3D;
-					};
-					6458D3DC20C4DEB5001C6D3D = {
+					647A21DF20CE785F008EB3AE = {
 						CreatedOnToolsVersion = 9.4;
 						TestTargetID = 6458D3B920C4DEB3001C6D3D;
 					};
@@ -242,8 +209,7 @@
 			projectRoot = "";
 			targets = (
 				6458D3B920C4DEB3001C6D3D /* GFunctionalGuidanceView */,
-				6458D3D120C4DEB5001C6D3D /* GFunctionalGuidanceViewTests */,
-				6458D3DC20C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests */,
+				647A21DF20CE785F008EB3AE /* GFunctionalGuidanceViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,14 +225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6458D3D020C4DEB5001C6D3D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6458D3DB20C4DEB5001C6D3D /* Resources */ = {
+		647A21DE20CE785F008EB3AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,40 +241,29 @@
 			files = (
 				6458D3F820C50D74001C6D3D /* NextGuideViewController.m in Sources */,
 				6458D3C220C4DEB3001C6D3D /* ViewController.m in Sources */,
-				6458D3F220C4E93F001C6D3D /* GFunctionalGuidanceView.m in Sources */,
+				642C494F20C7B777002E4C9F /* GFollowSlideTableViewCell.m in Sources */,
+				642C494B20C7B1B7002E4C9F /* GFollowSlideGuideViewController.m in Sources */,
 				6458D3CD20C4DEB5001C6D3D /* main.m in Sources */,
+				64B4C93620EB6ADC00A99F31 /* GFunctionalGuidanceView.m in Sources */,
 				6458D3BF20C4DEB3001C6D3D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6458D3CE20C4DEB5001C6D3D /* Sources */ = {
+		647A21DC20CE785F008EB3AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6458D3D720C4DEB5001C6D3D /* GFunctionalGuidanceViewTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6458D3D920C4DEB5001C6D3D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6458D3E220C4DEB5001C6D3D /* GFunctionalGuidanceViewUITests.m in Sources */,
+				647A21E320CE785F008EB3AE /* GFunctionalGuidanceViewUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6458D3D420C4DEB5001C6D3D /* PBXTargetDependency */ = {
+		647A21E620CE785F008EB3AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6458D3B920C4DEB3001C6D3D /* GFunctionalGuidanceView */;
-			targetProxy = 6458D3D320C4DEB5001C6D3D /* PBXContainerItemProxy */;
-		};
-		6458D3DF20C4DEB5001C6D3D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6458D3B920C4DEB3001C6D3D /* GFunctionalGuidanceView */;
-			targetProxy = 6458D3DE20C4DEB5001C6D3D /* PBXContainerItemProxy */;
+			targetProxy = 647A21E520CE785F008EB3AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -485,49 +433,11 @@
 			};
 			name = Release;
 		};
-		6458D3EA20C4DEB5001C6D3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49FUNDNGC6;
-				INFOPLIST_FILE = GFunctionalGuidanceViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.GFunctionalGuidanceViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFunctionalGuidanceView.app/GFunctionalGuidanceView";
-			};
-			name = Debug;
-		};
-		6458D3EB20C4DEB5001C6D3D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49FUNDNGC6;
-				INFOPLIST_FILE = GFunctionalGuidanceViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.GFunctionalGuidanceViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFunctionalGuidanceView.app/GFunctionalGuidanceView";
-			};
-			name = Release;
-		};
-		6458D3ED20C4DEB5001C6D3D /* Debug */ = {
+		647A21E820CE785F008EB3AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				DEVELOPMENT_TEAM = FDV8Q23A7X;
 				INFOPLIST_FILE = GFunctionalGuidanceViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,11 +451,11 @@
 			};
 			name = Debug;
 		};
-		6458D3EE20C4DEB5001C6D3D /* Release */ = {
+		647A21E920CE785F008EB3AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				DEVELOPMENT_TEAM = FDV8Q23A7X;
 				INFOPLIST_FILE = GFunctionalGuidanceViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,20 +490,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6458D3E920C4DEB5001C6D3D /* Build configuration list for PBXNativeTarget "GFunctionalGuidanceViewTests" */ = {
+		647A21E720CE785F008EB3AE /* Build configuration list for PBXNativeTarget "GFunctionalGuidanceViewUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6458D3EA20C4DEB5001C6D3D /* Debug */,
-				6458D3EB20C4DEB5001C6D3D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6458D3EC20C4DEB5001C6D3D /* Build configuration list for PBXNativeTarget "GFunctionalGuidanceViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6458D3ED20C4DEB5001C6D3D /* Debug */,
-				6458D3EE20C4DEB5001C6D3D /* Release */,
+				647A21E820CE785F008EB3AE /* Debug */,
+				647A21E920CE785F008EB3AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

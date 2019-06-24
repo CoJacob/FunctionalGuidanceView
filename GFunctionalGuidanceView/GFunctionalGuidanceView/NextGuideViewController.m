@@ -49,7 +49,7 @@
 - (UIButton *)guideButton {
     if (!_guideButton) {
         _guideButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _guideButton.bounds = CGRectMake(0, 0, 100, 45);
+        _guideButton.bounds = CGRectMake(0, 50, 100, 45);
         _guideButton.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
         [_guideButton setTitle:@"Show Guide" forState:UIControlStateNormal];
         [_guideButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
@@ -80,7 +80,13 @@
 }
 
 - (void)showGuideView {
-    [GFunctionalGuidanceView functionalGuideWithItems:self.guideItems guideIdentifier:@"testGuide2" tapView:self.skipButton];
+    UIImageView *_guideItem = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 70, 35)];
+    _guideItem.contentMode = UIViewContentModeScaleAspectFill;
+    _guideItem.clipsToBounds = YES;
+    _guideItem.image = [UIImage imageNamed:@"follow"];
+    [GFunctionalGuidanceView functionalGuideWithItem:_guideItem
+                                     guideIdentifier:@"Follow"
+                                             tapView:self.skipButton];
 }
 
 #pragma mark - IBAction
@@ -92,7 +98,7 @@
 }
 
 - (void)tapButtonAction: (UIButton *)button {
-    
+    [self.skipButton setTitle:@"Login" forState:UIControlStateNormal];
 }
 
 

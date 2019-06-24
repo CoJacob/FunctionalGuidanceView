@@ -12,11 +12,9 @@
 
 @property (nonatomic, copy) void(^lastTapBlock)(void);
 
-+ (instancetype)functionalGuideWithItems: (NSArray *)items guideIdentifier: (NSString *)guideIdentifier;
-
-+ (instancetype)functionalGuideWithItems: (NSArray *)items
-                         guideIdentifier: (NSString *)guideIdentifier
-                                 tapView: (UIView *)tapView;
++ (instancetype)functionalGuideWithItem: (UIView *)item
+                        guideIdentifier: (NSString *)guideIdentifier
+                                tapView: (UIView *)tapView;
 
 @end
 

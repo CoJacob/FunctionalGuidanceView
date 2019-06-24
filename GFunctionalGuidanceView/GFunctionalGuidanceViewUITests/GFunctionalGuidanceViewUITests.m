@@ -2,7 +2,7 @@
 //  GFunctionalGuidanceViewUITests.m
 //  GFunctionalGuidanceViewUITests
 //
-//  Created by Caoguo on 2018/6/4.
+//  Created by Caoguo on 2018/6/11.
 //  Copyright © 2018年 Caoguo. All rights reserved.
 //
 
@@ -33,8 +33,36 @@
 }
 
 - (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    
+    XCUIElementQuery *tablesQuery = [[XCUIApplication alloc] init].tables;
+    [tablesQuery/*@START_MENU_TOKEN@*/.staticTexts[@"Follow slide"]/*[[".cells.staticTexts[@\"Follow slide\"]",".staticTexts[@\"Follow slide\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ tap];
+    
+    XCUIElement *leftButton = tablesQuery/*@START_MENU_TOKEN@*/.buttons[@"Left"]/*[[".cells.buttons[@\"Left\"]",".buttons[@\"Left\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/;
+    [leftButton tap];
+    [leftButton tap];
+    [leftButton tap];
+    [leftButton tap];
+    
+    XCUIElement *bottomButton = tablesQuery/*@START_MENU_TOKEN@*/.buttons[@"Bottom"]/*[[".cells.buttons[@\"Bottom\"]",".buttons[@\"Bottom\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/;
+    [bottomButton tap];
+    [bottomButton tap];
+    [bottomButton swipeUp];
+    [tablesQuery/*@START_MENU_TOKEN@*/.buttons[@"Right"]/*[[".cells.buttons[@\"Right\"]",".buttons[@\"Right\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ tap];
+    
+    [self testGuideVC];
 }
+
+- (void)testGuideVC {
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.tables/*@START_MENU_TOKEN@*/.staticTexts[@"Next ViewController"]/*[[".cells.staticTexts[@\"Next ViewController\"]",".staticTexts[@\"Next ViewController\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ tap];
+    [app.buttons[@"Show Guide"] tap];
+    [app.buttons[@"SKIP"] tap];
+    
+}
+
+
+
 
 @end
