@@ -16,4 +16,4 @@ An iOS FunctionalGuidanceView (自动设置引导提示视图位置,并且带有
 
 # Preview
 
-![img](https://github.com/Winerywine/CalendarPicker/blob/master/Calendar_record.gif)
+![img](https://github.com/Winerywine/FunctionalGuidanceView/blob/master/guide_record.gif)
